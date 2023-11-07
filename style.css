@@ -110,8 +110,6 @@ header {
 }
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
 :root {
@@ -267,4 +265,42 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }
+}
+
+--------------------------------------------------------------
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
 }
