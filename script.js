@@ -8,3 +8,12 @@ function menuShow() {
         document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
     }
 }
+
+function changeImage() {
+    var image = document.getElementById('camisa.branca');
+    if (image.src.match("img/Dimona_Frente_branca.png")) {
+        image.src = "img/Dimona_Costas_branca.png";
+    } else {
+        image.src = "img/Dimona_Frente_branca.png";
+    }
+}
