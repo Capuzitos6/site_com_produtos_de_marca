@@ -17,3 +17,12 @@ function changeImage() {
         image.src = "img/Dimona_Frente_branca.png";
     }
 }
+
+function changeImage() {
+    var image = document.getElementById('camisa.preta');
+    if (image.src.match("img/Dimona_Frente_preta.png")) {
+        image.src = "img/Dimona_Costas_preta.png";
+    } else {
+        image.src = "img/Dimona_Frente_preta.png";
+    }
+}
