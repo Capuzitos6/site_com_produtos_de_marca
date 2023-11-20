@@ -9,12 +9,12 @@ function menuShow() {
     }
 }
 
-function changeImageBranca() {
-    var image = document.getElementById('camisa.branca');
-    if (image.src.match("img/Dimona_Frente_branca.png")) {
-        image.src = "img/Dimona_Costas_branca.png";
+function changeImagemine() {
+    var image = document.getElementById('camisa.mine');
+    if (image.src.match("img/Dimona_Frente_Mine.png")) {
+        image.src = "img/Dimona_Costas_Mine.png";
     } else {
-        image.src = "img/Dimona_Frente_branca.png";
+        image.src = "img/Dimona_Frente_Mine.png";
     }
 }
 
@@ -36,20 +36,41 @@ function changeImageTime() {
     }
 }
 
-function changeImageKitty() {
-    var image = document.getElementById('camisa.Kitty');
-    if (image.src.match("img/Dimona_Frente_kitty.png")) {
-        image.src = "img/Dimona_Costas_kitty.png";
+function changeImagegomu() {
+    var image = document.getElementById('camisa.gomu');
+    if (image.src.match("img/Dimona_Frente_Gomu.png")) {
+        image.src = "img/Dimona_Costas_Gomu.png";
     } else {
-        image.src = "img/Dimona_Frente_kitty.png";
+        image.src = "img/Dimona_Frente_Gomu.png";
     }
 }
 
-function changeImagepromo() {
-    var image = document.getElementById('promo');
-    if (image.src.match("img/Promoção.2.png")) {
-        image.src = "img/Promoção.1.png";
+function changeImagedonuts() {
+    var image = document.getElementById('camisa.donuts');
+    if (image.src.match("img/Dimona_Frente_Donuts.png")) {
+        image.src = "img/Dimona_Costas_Donuts.png";
     } else {
-        image.src = "img/Promoção.2.png";
+        image.src = "img/Dimona_Frente_Donuts.png";
     }
 }
+
+function changeImageegg3() {
+    var image = document.getElementById('camisa.egg3');
+    if (image.src.match("img/Dimona_Frente_egg3.png")) {
+        image.src = "img/Dimona_Costas_egg3.png";
+    } else {
+        image.src = "img/Dimona_Frente_egg3.png";
+    }
+}
+
+function changeImagetrauma() {
+    var image = document.getElementById('camisa.trauma');
+    if (image.src.match("img/Dimona_Frente_Trauma.png")) {
+        image.src = "img/Dimona_Costas_Trauma.png";
+    } else {
+        image.src = "img/Dimona_Frente_Trauma.png";
+    }
+}
+
+
+
