@@ -110,6 +110,9 @@ header {
 }
 
 
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
 :root {
@@ -303,4 +306,85 @@ button {
 
 button:hover {
     background-color: #000000;
+}
+
+     * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .carousel img.active {
+            opacity: 1;
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .carousel-control.left {
+            left: 20px;
+        }
+
+        .carousel-control.right {
+            right: 20px;
+        }
+
+----
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.carousel img {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+.carousel img:first-child {
+    display: block;
+}
+.points {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 10px;
+    cursor: pointer;
 }
