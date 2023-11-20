@@ -54,38 +54,3 @@ function changeImagepromo() {
     }
 }
 
-
-
-let currentIndex = 0;
-let images = document.querySelectorAll('.carousel img/Promoção.1.png');
-let points = document.querySelectorAll('.point');
-
-
-function updatePoints() {
-    points.forEach((point, index) => {
-        if (index === currentIndex) {
-            point.style.backgroundColor = '#000';
-        } else {
-            point.style.backgroundColor = '#ccc';
-        }
-    });
-}
-
-
-function moveCarousel(newIndex) {
-    if (newIndex >= 0 && newIndex < images.length) {
-        images[currentIndex].style.display = 'none';
-        images[newIndex].style.display = 'block';
-        currentIndex = newIndex;
-        updatePoints();
-    }
-}
-
-
-function startCarousel() {
-    setInterval(() => {
-        moveCarousel((currentIndex + 1) % images.length);
-    }, 3000);
-}
-
-startCarousel();
