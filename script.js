@@ -46,11 +46,10 @@ function changeImageKitty() {
 }
 
 function changeImagepromo() {
-    var image = document.getElementById('camisa.promo');
+    var image = document.getElementById('promo');
     if (image.src.match("img/Promoção.2.png")) {
         image.src = "img/Promoção.1.png";
     } else {
         image.src = "img/Promoção.2.png";
     }
 }
-
