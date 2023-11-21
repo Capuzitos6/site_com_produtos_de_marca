@@ -231,17 +231,14 @@ footer {
 
 --------------------------------------------------------------
 
-body {
-    font-family: Arial, sans-serif;
+
+
+.loja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
 form {
     display: flex;
@@ -254,29 +251,42 @@ input {
 }
 
 button {
-    margin-top: 10px;
-    padding: 5px;
     background-color: #24252a;
-    color: white;
     border: none;
-    border-radius: 5px;
+    color: #ffffff;
     cursor: pointer;
     
+    margin: 10px auto;
+    padding: 10px;
+    
+    text-align: center;
 }
 
 button:hover {
-    background-color: #000000;
-}
-
-     * {
-            box-sizing: border-box;
+  
+    justify-content: space-between;
+   
         }
 
-        body {
-            font-family: Arial, sans-serif;
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
-      
+        
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            justify-items: center;
+        }
+        
+        .item {
+            margin-left: 20px;
+        }
+
+      -----
 
 .slider img {
     position: fixed;
