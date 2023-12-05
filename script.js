@@ -53,6 +53,11 @@ function menuShow() {
         image.src = image.src.match("img/Dimona_Frente_totoro.png") ? "img/Dimona_Costas_totoro.png" : "img/Dimona_Frente_totoro.png";
     }
 
+    function changeImagepochita() {
+        var image = document.getElementById('camisa.pochita');
+        image.src = image.src.match("img/Dimona_Frente_Pochita.png") ? "img/Dimona_Costas_Pochita.png" : "img/Dimona_Frente_Pochita.png";
+    }
+
 }
 
 
@@ -68,3 +73,5 @@ function menuShow() {
         alert('Compra realizada');
     });
 });
+
+
