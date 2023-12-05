@@ -34,9 +34,6 @@
                 <button onclick="location.href='pagina2.html'"><a href="#">Tire Suas Duvias aqui</a></button>
             </div>
 
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="" alt=""></button>
-            </div>
         </nav>
         <div class="mobile-menu">
             <ul>
@@ -45,21 +42,22 @@
                 <li class="nav-item"><a href="#" class="nav-link">Calçados</a></li>
             </ul>
 
-            <div class="login-button">
-                <button  ><a href="#">Entrar</a></button>
-            </div>
         </div>
     </header>
 
-    <script src="script.js">
-        
-    </script>
+   
 <br>
 <div class="slider">
     <img src="img/Promoção.1.png" alt="Image 1">
     <img src="img/Promoção.2.png" alt="Image 2">
     <img src="img/Promoção.3.png" alt="Image 3">
 </div>
+
+<div class="timer"> <h2>Promoção relampago!!</h2>
+    <span class="hour">01</span>:<span class="minute">00</span>:<span class="second">00</span>
+</div>
+
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <center>
@@ -70,7 +68,7 @@
                 75 R$
             </font>
         </h2>
-<img id="camisa.mine" src="img/Dimona_Frente_Mine.png" style="width:200px" onmouseover="changeImagemine()" >
+<img id="camisa.mine" src="img/Dimona_Frente_Mine.png" style="width:200px" onmouseover="changeImagemine()"  onmouseleave="changeImagemine()">
     
 </a>
 </button>
@@ -82,7 +80,7 @@
                 75 R$
             </font>
         </h2>
-        <img id="camisa.donuts" src="img/Dimona_Frente_Donuts.png" style="width:200px" onmouseover="changeImagedonuts()" >
+        <img id="camisa.donuts" src="img/Dimona_Frente_Donuts.png" style="width:200px" onmouseover="changeImagedonuts()" onmouseleave="changeImagedonuts()" >
         
 </a>
 </button>
@@ -94,7 +92,7 @@
                 75 R$
             </font>
         </h2>
-        <img id="camisa.time" src="img/Dimona_Frente_time.png" style="width:200px" onmouseover="changeImageTime()" >
+        <img id="camisa.time" src="img/Dimona_Frente_time.png" style="width:200px" onmouseover="changeImageTime()" onmouseleave="changeImageTime()" >
     
 </a>
 </button>
@@ -106,7 +104,7 @@
                 75 R$
             </font>
         </h2>
-        <img id="camisa.gomu" src="img/Dimona_Frente_Gomu.png" style="width:200px" onmouseover="changeImagegomu()" >
+        <img id="camisa.gomu" src="img/Dimona_Frente_Gomu.png" style="width:200px" onmouseover="changeImagegomu()" onmouseleave="changeImagegomu()">
     
 </a>
 </button>
@@ -120,7 +118,7 @@
                 75 R$
             </font>
         </h2>
-        <img id="camisa.preta" src="img/Dimona_Frente_preta.png" style="width:200px" onmouseover="changeImagePreta()" >
+        <img id="camisa.preta" src="img/Dimona_Frente_preta.png" style="width:200px" onmouseover="changeImagePreta()" onmouseleave="changeImagePreta()">
  
 </a>
 </button>
@@ -132,7 +130,7 @@
                 75 R$
             </font>
         </h2>
-        <img id="camisa.egg3" src="img/Dimona_Frente_egg3.png" style="width:200px" onmouseover="changeImageegg3()" >
+        <img id="camisa.egg3" src="img/Dimona_Frente_egg3.png" style="width:200px" onmouseover="changeImageegg3()" onmouseleave="changeImageegg3()">
     
 </a>
 </button>
@@ -146,7 +144,7 @@
                 75 R$
             </font>
         </h2>
-        <img id="camisa.trauma" src="img/Dimona_Frente_Trauma.png" style="width:200px" onmouseover="changeImagetrauma()" >
+        <img id="camisa.trauma" src="img/Dimona_Frente_Trauma.png" style="width:200px" onmouseover="changeImagetrauma()" onmouseleave="changeImagetrauma()">
     
 </a>
 </button>
@@ -158,7 +156,19 @@
                 75 R$
             </font>
         </h2>
-        <img id="camisa.totoro" src="img/Dimona_Frente_totoro.png" style="width:200px" onmouseover="changeImagetotoro()" >
+        <img id="camisa.totoro" src="img/Dimona_Frente_totoro.png" style="width:200px" onmouseover="changeImagetotoro()" onmouseleave="changeImagetotoro()">
+        
+</a>
+</button>
+
+<button onclick="location.href='cap/camisa.pochita.html'">
+    <a href="#">
+        <h2 class="nolink">
+            <font color="White">Camisa Pochita<br>
+                75 R$
+            </font>
+        </h2>
+        <img id="camisa.pochita" src="img/Dimona_Frente_Pochita.png" style="width:200px" onmouseover="changeImagepochita()" onmouseleave="changeImagepochita()">
         
 </a>
 </button>
@@ -167,9 +177,6 @@
 
         
 
-    <main>
-        
-    </main>
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -210,6 +217,8 @@
 
 
     </footer>
-
+ <script src="script.js">
+        
+    </script>
 </body>
 </html>
